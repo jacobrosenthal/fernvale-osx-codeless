@@ -1,6 +1,6 @@
 #fernvale-osx
 
-Fernvale (Mediatek) OSX serial driver source. The device shows up at as /dev/tty.usbmodem1410 for me. I haven't had success usb loading yet so I can't say for sure the drivers are fully working, but the board acts just like it does under linux with the udev changes. Also I've altered the match for an Arduino serial interface which worked perfectly. Timing may be an issue. @thesourcerer8 added make test which uses hub-ctrl which doesn’t appear to have an OSX equivalent.
+Fernvale (Mediatek) OSX codeless drivers. The device shows up at as /dev/tty.usbmodem1410 and /dev/cu.usbmodem1410 for me. You MUST use the /dev/cu.usbmodem1410 interface when loading [fernly](https://github.com/xobs/fernly)
 
 ##install
 You need to disable signing which became mandatory at some point recently
